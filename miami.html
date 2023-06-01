@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+    .wrapper {
+      width: 840px;
+      height: 420px;
+      background: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Images-Download-Logo-Miami-Heat-Wallpapers.jpg) no-repeat center / cover;
+      padding: 80px;
+      box-sizing: border-box;
+      color: azure;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1><strong>簽賭仔專用</strong></h1>
+    <h1>勝方：<span id="one">???</span></h1>
+    <h1>凈勝分：<span id="two">???</span></h3>
+  </div>
+  <script>
+    const teamArr = ['熱火', '金塊']
+    const scoreArr= ['5分內','5~10','11~15','16~20','20以上']
+    const random = Math.floor(Math.random() * teamArr.length)
+    const one = document.querySelector('#one')
+    one.innerHTML = teamArr[random]
+
+
+    const random2 = Math.floor(Math.random() * scoreArr.length)
+    const two = document.querySelector('#two')
+    two.innerHTML = scoreArr[random2]
+  
+  </script>
+</body>
+
+</html>
